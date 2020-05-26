@@ -1,0 +1,10 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.datails %></p>
+ <% if @task.completed == true %>
+  <p><%="[X] This task is completed" %></p>
+  <%else %>
+  <p><%="[] This task is not completed" %></p>
+  <% end %>
+<%= link_to "Edit", edit_task_path %>
+  <%= link_to "Back", tasks_path %>
+
